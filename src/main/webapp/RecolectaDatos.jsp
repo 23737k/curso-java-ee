@@ -23,7 +23,12 @@
 
 	Statement statement = conexion.createStatement();
 	statement.executeUpdate(sqlInstruction);
-	out.println("Registrado con Exito!");
+	
+	/*Redirijo*/
+	response.sendRedirect("InicioDeSesion.jsp");
+	
 	%>
+	
+	
 </body>
 </html>
